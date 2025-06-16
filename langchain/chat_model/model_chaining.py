@@ -23,7 +23,7 @@ translation = chain.invoke(
     {
         "input_language": "English",
         "output_language": "German",
-        "input": "I am an expert trainer in Java Programming.",
+        "input": "I am an expert trainer in Programming.",
     }
 )
 
