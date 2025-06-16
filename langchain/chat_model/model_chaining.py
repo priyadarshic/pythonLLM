@@ -14,15 +14,17 @@ prompt = ChatPromptTemplate.from_messages(
             "system",
             "You are a helpful assistant that translates {input_language} to {output_language}.",
         ),
-        ("human", "{input}"),
+        ("human",
+         "{input}"),
     ]
 )
 
 chain = prompt | llm
+
 translation = chain.invoke(
     {
         "input_language": "English",
-        "output_language": "German",
+        "output_language": "Russian",
         "input": "I am an expert trainer in Programming.",
     }
 )
